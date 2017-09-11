@@ -1,0 +1,136 @@
+{
+  "contract_name": "Administrable",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "deleteAdmin",
+          "type": "address"
+        }
+      ],
+      "name": "removeAdmin",
+      "outputs": [
+        {
+          "name": "success",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "admins",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "newAdmin",
+          "type": "address"
+        }
+      ],
+      "name": "addAdmin",
+      "outputs": [
+        {
+          "name": "success",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getUserIsAdmin",
+      "outputs": [
+        {
+          "name": "isIndeed",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "transferOwnership",
+      "outputs": [
+        {
+          "name": "success",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "payable": false,
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "address1",
+          "type": "address"
+        }
+      ],
+      "name": "LogNewAdmin",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "address1",
+          "type": "address"
+        }
+      ],
+      "name": "LogRemovedAdmin",
+      "type": "event"
+    }
+  ],
+  "unlinked_binary": "0x6060604052341561000f57600080fd5b5b5b60008054600160a060020a03191633600160a060020a03161790555b600160a060020a0333166000908152600160208190526040909120805460ff191690911790555b5b610373806100646000396000f3006060604052361561005c5763ffffffff60e060020a6000350416631785f53c8114610061578063429b62e51461009457806370480275146100c757806384d0bfd4146100fa5780638da5cb5b14610121578063f2fde38b14610150575b600080fd5b341561006c57600080fd5b610080600160a060020a0360043516610183565b604051901515815260200160405180910390f35b341561009f57600080fd5b610080600160a060020a0360043516610223565b604051901515815260200160405180910390f35b34156100d257600080fd5b610080600160a060020a0360043516610238565b604051901515815260200160405180910390f35b341561010557600080fd5b6100806102c2565b604051901515815260200160405180910390f35b341561012c57600080fd5b6101346102e2565b604051600160a060020a03909116815260200160405180910390f35b341561015b57600080fd5b610080600160a060020a03600435166102f1565b604051901515815260200160405180910390f35b6000805433600160a060020a0390811691161461019f57600080fd5b600054600160a060020a03838116911614156101ba57600080fd5b600160a060020a03821660009081526001602052604090819020805460ff191690557fe6e9128d95298888c459545040e07936d4c97dd2fea5e367bd1bfb7d90b6cf8290839051600160a060020a03909116815260200160405180910390a15060015b5b919050565b60016020526000908152604090205460ff1681565b6000805433600160a060020a0390811691161461025457600080fd5b600160a060020a038216600090815260016020819052604091829020805460ff191690911790557f39e7d4b9ba48f55a740a5192809dbc498fa12724c030b37dab126a3f6774c0f390839051600160a060020a03909116815260200160405180910390a15060015b5b919050565b600160a060020a03331660009081526001602052604090205460ff165b90565b600054600160a060020a031681565b6000805433600160a060020a0390811691161461030d57600080fd5b600160a060020a038216151561032257600080fd5b5060008054600160a060020a031916600160a060020a03831617905560015b5b9190505600a165627a7a72305820ef4f233bb7436a7220e2072254fe22307b2aa4b0b73fe26b9332a3ec7dc569ac0029",
+  "networks": {},
+  "schema_version": "0.0.5",
+  "updated_at": 1504963074764
+}

@@ -1,0 +1,483 @@
+{
+  "contract_name": "Storefront",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "totalPayments",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "deleteAdmin",
+          "type": "address"
+        }
+      ],
+      "name": "removeAdmin",
+      "outputs": [
+        {
+          "name": "success",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getProductArrayLength",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "onOff",
+          "type": "bool"
+        }
+      ],
+      "name": "runSwitch",
+      "outputs": [
+        {
+          "name": "success",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "admins",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "manager",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "id",
+          "type": "uint256"
+        }
+      ],
+      "name": "removeProduct",
+      "outputs": [
+        {
+          "name": "success",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "withdrawPayments",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "newAdmin",
+          "type": "address"
+        }
+      ],
+      "name": "addAdmin",
+      "outputs": [
+        {
+          "name": "success",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "products",
+      "outputs": [
+        {
+          "name": "price",
+          "type": "uint256"
+        },
+        {
+          "name": "stock",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getUserIsAdmin",
+      "outputs": [
+        {
+          "name": "isIndeed",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "price",
+          "type": "uint256"
+        },
+        {
+          "name": "stock",
+          "type": "uint256"
+        },
+        {
+          "name": "id",
+          "type": "uint256"
+        }
+      ],
+      "name": "addProduct",
+      "outputs": [
+        {
+          "name": "success",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "id",
+          "type": "uint256"
+        },
+        {
+          "name": "quantity",
+          "type": "uint256"
+        }
+      ],
+      "name": "purchaseProduct",
+      "outputs": [
+        {
+          "name": "success",
+          "type": "bool"
+        }
+      ],
+      "payable": true,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "id",
+          "type": "uint256"
+        }
+      ],
+      "name": "getProduct",
+      "outputs": [
+        {
+          "name": "price",
+          "type": "uint256"
+        },
+        {
+          "name": "stock",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "productIds",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "coPurchase",
+      "outputs": [
+        {
+          "name": "success",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "running",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "payments",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "transferOwnership",
+      "outputs": [
+        {
+          "name": "success",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "payable": false,
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "id",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "name": "price",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "name": "stock",
+          "type": "uint256"
+        }
+      ],
+      "name": "LogAddProduct",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "id",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "name": "price",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "name": "stock",
+          "type": "uint256"
+        }
+      ],
+      "name": "LogRemovedProduct",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "purchaser",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "id",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "name": "price",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "name": "quantity",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "name": "stock",
+          "type": "uint256"
+        }
+      ],
+      "name": "LogPurchase",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "sender",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "switchSetting",
+          "type": "bool"
+        }
+      ],
+      "name": "LogRunSwitch",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "recipient",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "payment",
+          "type": "uint256"
+        }
+      ],
+      "name": "LogWithdrawal",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "address1",
+          "type": "address"
+        }
+      ],
+      "name": "LogNewAdmin",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "address1",
+          "type": "address"
+        }
+      ],
+      "name": "LogRemovedAdmin",
+      "type": "event"
+    }
+  ],
+  "unlinked_binary": "0x6060604052341561000f57600080fd5b5b5b5b5b60008054600160a060020a03191633600160a060020a03161790555b600160a060020a0333166000908152600160208190526040909120805460ff191690911790555b6004805460ff191660011790555b5b5b610c4b806100756000396000f300606060405236156100f55763ffffffff60e060020a6000350416625b448781146100fa5780631785f53c1461011f57806325cc09ef146101525780632dd9705814610177578063429b62e5146101a3578063481c6a75146101d65780635ee95cae146102055780636103d70b1461022f57806370480275146102445780637acc0b201461027757806384d0bfd4146102a55780638da5cb5b146102cc5780639937b38f146102fb578063a04404261461032b578063b9db15b41461034d578063cb51bba91461037b578063d5d2639b146103a3578063d85bd526146103ca578063e2982c21146103f1578063f2fde38b14610422575b600080fd5b341561010557600080fd5b61010d610455565b60405190815260200160405180910390f35b341561012a57600080fd5b61013e600160a060020a036004351661045b565b604051901515815260200160405180910390f35b341561015d57600080fd5b61010d6104fb565b60405190815260200160405180910390f35b341561018257600080fd5b61013e6004351515610502565b604051901515815260200160405180910390f35b34156101ae57600080fd5b61013e600160a060020a036004351661057c565b604051901515815260200160405180910390f35b34156101e157600080fd5b6101e9610591565b604051600160a060020a03909116815260200160405180910390f35b341561021057600080fd5b61013e6004356105a5565b604051901515815260200160405180910390f35b341561023a57600080fd5b6102426106a9565b005b341561024f57600080fd5b61013e600160a060020a0360043516610787565b604051901515815260200160405180910390f35b341561028257600080fd5b61028d600435610811565b60405191825260208201526040908101905180910390f35b34156102b057600080fd5b61013e61082a565b604051901515815260200160405180910390f35b34156102d757600080fd5b6101e961084a565b604051600160a060020a03909116815260200160405180910390f35b341561030657600080fd5b61013e600435602435604435610859565b604051901515815260200160405180910390f35b61013e60043560243561091f565b604051901515815260200160405180910390f35b341561035857600080fd5b61028d600435610a61565b60405191825260208201526040908101905180910390f35b341561038657600080fd5b61010d600435610a7d565b60405190815260200160405180910390f35b34156103ae57600080fd5b61013e610aa0565b604051901515815260200160405180910390f35b34156103d557600080fd5b61013e610aa6565b604051901515815260200160405180910390f35b34156103fc57600080fd5b61010d600160a060020a0360043516610aaf565b60405190815260200160405180910390f35b341561042d57600080fd5b61013e600160a060020a0360043516610ac1565b604051901515815260200160405180910390f35b60035481565b6000805433600160a060020a0390811691161461047757600080fd5b600054600160a060020a038381169116141561049257600080fd5b600160a060020a03821660009081526001602052604090819020805460ff191690557fe6e9128d95298888c459545040e07936d4c97dd2fea5e367bd1bfb7d90b6cf8290839051600160a060020a03909116815260200160405180910390a15060015b5b919050565b6005545b90565b6000805433600160a060020a0390811691161461051e57600080fd5b6004805460ff19168315151790557fe149139e745b87d23672d6d1bd3f9160008dc717a946188ef8c5155e4ee6b8453383604051600160a060020a039092168252151560208201526040908101905180910390a15060015b5b919050565b60016020526000908152604090205460ff1681565b6004546101009004600160a060020a031681565b600160a060020a03331660009081526001602081905260408220548291829160ff161515146105d357600080fd5b60008481526006602052604090205415801590610600575060008481526006602052604090206001015415155b151561060b57600080fd5b50506000828152600660205260409081902060018101549054909180519081016040908152600080835260208084018290528782526006905220815181556020820151600190910155507f1f179bdeee5b8597449a7a08f3fbc83d1e2a81434d982a66052e34cc1794939684828460405180848152602001838152602001828152602001935050505060405180910390a1600192505b5b5050919050565b33600160a060020a0381166000908152600260205260409020548015156106cf57600080fd5b600160a060020a03301631819010156106e757600080fd5b6003546106fa908263ffffffff610b1716565b600355600160a060020a0382166000818152600260205260408082209190915582156108fc0290839051600060405180830381858888f19350505050151561073e57fe5b7fb4214c8c54fc7442f36d3682f59aebaf09358a4431835b30efb29d52cf9e1e913382604051600160a060020a03909216825260208201526040908101905180910390a15b5050565b6000805433600160a060020a039081169116146107a357600080fd5b600160a060020a038216600090815260016020819052604091829020805460ff191690911790557f39e7d4b9ba48f55a740a5192809dbc498fa12724c030b37dab126a3f6774c0f390839051600160a060020a03909116815260200160405180910390a15060015b5b919050565b6006602052600090815260409020805460019091015482565b600160a060020a03331660009081526001602052604090205460ff165b90565b600054600160a060020a031681565b600080841161086757600080fd5b600083101561087557600080fd5b60408051908101604090815285825260208083018690526000858152600690915220815181556020820151600191820155600580549092509081016108ba8382610bd4565b916000526020600020900160005b50839055507ffc3b97c0a0e8def0b9023864494a609d53a183dce7d00ed21351c07f3440159382858560405180848152602001838152602001828152602001935050505060405180910390a15060015b9392505050565b600082815260066020526040812060010154819081908490101561094257600080fd5b600085815260066020526040902054610961908563ffffffff610b2e16565b9150348290101561097157600080fd5b610981348363ffffffff610b1716565b905061098d3083610b5d565b6000858152600660205260409081902060010180548690039055600160a060020a0333169082156108fc0290839051600060405180830381858888f1935050505015156109d957600080fd5b6000858152600660205260409081902080546001909101547f634aeed90381b623ce040ab7230502291b9894f1059114992c97f1577ec9b9239233928992909189919051600160a060020a03909516855260208501939093526040808501929092526060840152608083019190915260a0909101905180910390a1600192505b505092915050565b600081815260066020526040902080546001909101545b915091565b6005805482908110610a8b57fe5b906000526020600020900160005b5054905081565b60015b90565b60045460ff1681565b60026020526000908152604090205481565b6000805433600160a060020a03908116911614610add57600080fd5b600160a060020a0382161515610af257600080fd5b5060008054600160a060020a031916600160a060020a03831617905560015b5b919050565b600082821115610b2357fe5b508082035b92915050565b6000828202831580610b4a5750828482811515610b4757fe5b04145b1515610b5257fe5b8091505b5092915050565b600160a060020a038216600090815260026020526040902054610b86908263ffffffff610bba16565b600160a060020a038316600090815260026020526040902055600354610bb2908263ffffffff610bba16565b6003555b5050565b600082820183811015610b5257fe5b8091505b5092915050565b815481835581811511610bf857600083815260209020610bf8918101908301610bfe565b5b505050565b6104ff91905b80821115610c185760008155600101610c04565b5090565b905600a165627a7a723058203f41261ee7ed18723305ced0c29201d35049536c9e021e64b887b073c21115f00029",
+  "networks": {},
+  "schema_version": "0.0.5",
+  "updated_at": 1504963074765
+}

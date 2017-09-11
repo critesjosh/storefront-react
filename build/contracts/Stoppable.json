@@ -1,0 +1,93 @@
+{
+  "contract_name": "Stoppable",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "onOff",
+          "type": "bool"
+        }
+      ],
+      "name": "runSwitch",
+      "outputs": [
+        {
+          "name": "success",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "running",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "transferOwnership",
+      "outputs": [
+        {
+          "name": "success",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "payable": false,
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "sender",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "switchSetting",
+          "type": "bool"
+        }
+      ],
+      "name": "LogRunSwitch",
+      "type": "event"
+    }
+  ],
+  "unlinked_binary": "0x6060604052341561000f57600080fd5b5b5b60008054600160a060020a03191633600160a060020a03161790555b6000805460a060020a60ff021916740100000000000000000000000000000000000000001790555b5b610221806100656000396000f300606060405263ffffffff60e060020a6000350416632dd9705881146100455780638da5cb5b14610071578063d85bd526146100a0578063f2fde38b146100c7575b600080fd5b341561005057600080fd5b61005d60043515156100fa565b604051901515815260200160405180910390f35b341561007c57600080fd5b610084610180565b604051600160a060020a03909116815260200160405180910390f35b34156100ab57600080fd5b61005d61018f565b604051901515815260200160405180910390f35b34156100d257600080fd5b61005d600160a060020a036004351661019f565b604051901515815260200160405180910390f35b6000805433600160a060020a0390811691161461011657600080fd5b6000805460a060020a60ff02191660a060020a841515021790557fe149139e745b87d23672d6d1bd3f9160008dc717a946188ef8c5155e4ee6b8453383604051600160a060020a039092168252151560208201526040908101905180910390a15060015b5b919050565b600054600160a060020a031681565b60005460a060020a900460ff1681565b6000805433600160a060020a039081169116146101bb57600080fd5b600160a060020a03821615156101d057600080fd5b5060008054600160a060020a031916600160a060020a03831617905560015b5b9190505600a165627a7a723058202b2e1d223c88ec0ff5872320a9aa3d41ac9d2a1a4b1a7b1d21d24b61332a0c0e0029",
+  "networks": {},
+  "schema_version": "0.0.5",
+  "updated_at": 1504963074765
+}

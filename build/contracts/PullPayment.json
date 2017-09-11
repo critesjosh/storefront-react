@@ -1,0 +1,65 @@
+{
+  "contract_name": "PullPayment",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "totalPayments",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "withdrawPayments",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "payments",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "recipient",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "payment",
+          "type": "uint256"
+        }
+      ],
+      "name": "LogWithdrawal",
+      "type": "event"
+    }
+  ],
+  "unlinked_binary": "0x6060604052341561000f57600080fd5b5b6101dd8061001f6000396000f300606060405263ffffffff60e060020a6000350416625b448781146100395780636103d70b1461005e578063e2982c2114610073575b600080fd5b341561004457600080fd5b61004c6100a4565b60405190815260200160405180910390f35b341561006957600080fd5b6100716100aa565b005b341561007e57600080fd5b61004c600160a060020a0360043516610188565b60405190815260200160405180910390f35b60015481565b33600160a060020a0381166000908152602081905260409020548015156100d057600080fd5b600160a060020a03301631819010156100e857600080fd5b6001546100fb908263ffffffff61019a16565b600155600160a060020a0382166000818152602081905260408082209190915582156108fc0290839051600060405180830381858888f19350505050151561013f57fe5b7fb4214c8c54fc7442f36d3682f59aebaf09358a4431835b30efb29d52cf9e1e913382604051600160a060020a03909216825260208201526040908101905180910390a15b5050565b60006020819052908152604090205481565b6000828211156101a657fe5b508082035b929150505600a165627a7a7230582080a4753cb6185d7dd2e44a014048793389ba9ddd5089449d373f6073424782f20029",
+  "networks": {},
+  "schema_version": "0.0.5",
+  "updated_at": 1504963074764
+}
