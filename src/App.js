@@ -26,6 +26,7 @@ class App extends Component {
       stores: [],
       products: [],
       currentStore: null,
+      currentStoreProducts: [],
       StorefrontABI: null,
       hub: null
     }
@@ -82,7 +83,7 @@ class App extends Component {
         })
 
         this.watchStores()
-        this.watchProducts()
+       // this.watchProducts()
 
         return this.state.web3.eth.getBalance(accounts[0]);
       }).then((balance) => {
@@ -112,6 +113,7 @@ class App extends Component {
       currentStore: store
     })
     this.watchProducts(store)
+    this.getProducts(store)
   }
 
   watchStores(){
@@ -153,6 +155,32 @@ class App extends Component {
         })
   }
 
+  getProducts(store){
+    var products
+    store.getProductArrayLength.call()
+    .then(length => {
+      length = parseInt(length.toString(10))
+      for(let i = 0; i < length; i++){
+        store.productIds.call(i)
+        .then(id => {
+          id = parseInt(id.toString(10))
+          store.getProduct.call(id)
+          .then(results => {
+            var product = {}
+            var products = this.state.products
+            product.id = id
+            product.price = results[0].toString(10)
+            product.quantity = results[1].toString(10)
+            products.push(product)
+            this.setState({
+              currentStoreProducts:products
+            })
+          })
+        })
+      }
+    })
+  }
+
   createStore(){
     this.state.hub.createStore({from: this.state.account, gas:900000})
    // this.watchProducts()
@@ -182,10 +210,11 @@ class App extends Component {
                 stores={this.state.stores}
                 setStore={this.setStore}
                 />
-              <CurrentStore
+             {/*} <CurrentStore
                 store={this.state.currentStore}
                 currentAccount={this.state.account}
-                />
+                products={this.state.currentStoreProducts}
+                /> */}
             </div>
           </div>
         </main>
